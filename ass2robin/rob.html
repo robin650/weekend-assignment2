@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkspaceW</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WorkspaceW</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#customers">Customers</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#account">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to WorkspaceW.</p>
+        </section>
+        <section id="customers">
+            <h2>Customers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Department ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Total Media Size</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-table-body">
+                    <tr>
+                        <td>JRYT456</td>
+                        <td>UHDSG</td>
+                        <td>John</td>
+                        <td>skadj@gmail.com</td>
+                        <td>2 GB</td>
+                    </tr>
+                    <tr>
+                        <td>JHSAG636</td>
+                        <td>ASDFJ</td>
+                        <td>Jane</td>
+                        <td>skadj@gmail.com</td>
+                        <td>0.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>ASJHSA77</td>
+                        <td>SAFEF</td>
+                        <td>Bob</td>
+                        <td>skadj@gmail.com</td>
+                        <td>200 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KSAHKJ366</td>
+                        <td>AFEEE</td>
+                        <td>Mary</td>
+                        <td>skadj@gmail.com</td>
+                        <td>50 GB</td>
+                    </tr>
+                    <tr>
+                        <td>SAKJHD35</td>
+                        <td>REYER</td>
+                        <td>Karan</td>
+                        <td>skadj@gmail.com</td>
+                        <td>45 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KKHUASU33</td>
+                        <td>HJHGF</td>
+                        <td>Chrissy</td>
+                        <td>skadj@gmail.com</td>
+                        <td>500 GB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="departments">
+            <h2>Departments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Department ID</th>
+                        <th>Department Incharge</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Total Media Size</th>
+                    </tr>
+                </thead>
+                <tbody id="department-table-body">
+                    <tr>
+                        <td>UHDSG</td>
+                        <td>John</td>
+                        <td>UHDSG</td>
+                        <td>23</td>
+                        <td>2 GB</td>
+                    </tr>
+                    <tr>
+                        <td>ASDFJ</td>
+                        <td>Jane</td>
+                        <td>ASDFJ</td>
+                        <td>45</td>
+                        <td>0.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>SAFEF</td>
+                        <td>Bob</td>
+                        <td>SAFEF</td>
+                        <td>76</td>
+                        <td>200 GB</td>
+                    </tr>
+                    <tr>
+                        <td>AFEEE</td>
+                        <td>Mary</td>
+                        <td>AFEEE</td>
+                        <td>87</td>
+                        <td>50 GB</td>
+                    </tr>
+                    <tr>
+                        <td>REYER</td>
+                        <td>Karan</td>
+                        <td>REYER</td>
+                        <td>76</td>
+                        <td>45 GB</td>
+                    </tr>
+                    <tr>
+                        <td>HJHGF</td>
+                        <td>Chrissy</td>
+                        <td>HJHGF</td>
+                        <td>78</td>
+                        <td>500 GB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="media">
+            <h2>Media</h2>
+            <div class="media-item">
+                <h3>Audio</h3>
+                <img src="f2.jpg" alt="Audio" width="200">
+                <p>14 TB</p>
+            </div>
+            <div class="media-item">
+                <h3>Video</h3>
+                <img src="a3.jpg" alt="Video" width="200">
+                <p>14 TB</p>
+            </div>
+            <div class="media-item">
+                <h3>Images</h3>
+                <img src="a2.jpg" alt="Images" width="200">
+                <p>14 TB</p>
+            </div>
+            <div class="media-item">
+                <h3>Files</h3>
+                <img src="a3.jpg" alt="Files" width="200">
+                <p>14 TB</p>
+            </div>
+        </section>
+        <section id="account">
+            <h2>My Account</h2>
+            <p><strong>Name:</strong> John Doe <button onclick="editField('name')">Edit</button></p>
+            <p><strong>Email:</strong> example@gmail.com <button onclick="editField('email')">Edit</button></p>
+            <p><strong>Phone Number:</strong> 9134837948 <button onclick="editField('phone')">Edit</button></p>
+            <p><strong>Date of Birth:</strong> July 16, 1999 <button onclick="editField('dob')">Edit</button></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
